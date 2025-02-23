@@ -1,5 +1,5 @@
 # AeroThemeGTK
-AeroThemeGTK is an Aero theme for libadwaita applications. Intended to be used with AeroThemePlasma - currently in pre-alpha stages.
+AeroThemeGTK is an Aero theme for libadw applications. Intended to be used with AeroThemePlasma - currently in pre-alpha stages.
 
 ### How do I use this?
 Clone the reposiory, then move it's contents to your ``~/.config/gtk-4.0`` directory, then launch any libadw app.
