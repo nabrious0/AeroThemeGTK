@@ -1,0 +1,521 @@
+:root {
+    --icon-border-color: #393b46;
+}
+
+window {
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-shadow: none;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px #000, 0 0 10px #000, 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.view:not(window) {
+    background: white;
+}
+
+.top-bar,
+taboverview > widget.background,
+taboverview > toolbarview.background {
+    background: transparent;
+}
+window > dialog-host > widget > widget > box.vertical > headerbar {
+	background: transparent;
+	box-shadow: none;
+}
+
+.top-bar .title, button.flat label, windowhandle label.title {
+    text-shadow: 0 0 10px #fff, 0 0 8px #fff, 0 0 8px #fff;
+}
+
+.close {
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    min-width: 49px;
+    min-height: 20px;
+    background-image: url("assets/close.png");
+    background-repeat: no-repeat;
+    border-radius: 0 0 6px 0;
+}
+.close:hover {
+    background-image: url("assets/close-hover.png");
+    box-shadow: 0 0 6px #f4a18d, 0 0 6px #f4a18d;
+}
+.close:active {
+    background-image: url("assets/close-active.png");
+}
+.maximize {
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    min-width: 27px;
+    min-height: 20px;
+    background-image: url("assets/maximize.png");
+    background-repeat: no-repeat;
+    margin-right: -3px;
+}
+.maximize:hover {
+    background-image: url("assets/maximize-hover.png");
+}
+.maximize:active {
+    background-image: url("assets/maximize-active.png");
+}
+.minimize {
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    min-width: 29px;
+    min-height: 20px;
+    margin-right: -3px;
+    background-image: url("assets/minimize.png");
+    background-repeat: no-repeat;
+    border-radius: 0 0 0 6px;
+}
+.minimize:hover {
+    background-image: url("assets/minimize-hover.png");
+}
+.minimize:active {
+    background-image: url("assets/minimize-active.png");
+}
+
+.maximize:hover, .minimize:hover {
+    box-shadow: 0 0 6px #70d1f8, 0 0 6px #70d1f8;
+}
+
+.close image,
+.maximize image,
+.minimize image {
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    min-height: 0;
+    min-width: 0;
+}
+
+windowcontrols:not(.start) {
+    margin-right: -6px;
+}
+
+.top-bar splitbutton:hover {
+    background: transparent;
+}
+.top-bar splitbutton button, .top-bar splitbutton menubutton button, .top-bar button.image-button {
+    min-height: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.95);
+    border-top: 0;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.8), 1px 0 0 0 rgba(255, 255, 255, 0.8), -1px 0 0 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 0 rgba(255, 255, 255, 0.8), inset 1px 0 0 0 rgba(255, 255, 255, 0.8), inset -1px 0px 0 0 rgba(255, 255, 255, 0.8), inset 0 1px 0 0 #fff;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0, rgba(255, 255, 255, 0.4) 50%, transparent 50%, transparent), rgba(0, 0, 0, 0.1);
+    transform: scale(0.7);
+    border-radius: 0 0 7px 7px;
+}
+.top-bar button.image-button:hover {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #1668a0;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.8), 1px 0 0 0 rgba(255, 255, 255, 0.8), -1px 0 0 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 0 rgba(255, 255, 255, 0.8), inset 1px 0 0 0 rgba(255, 255, 255, 0.8), inset -1px 0px 0 0 rgba(255, 255, 255, 0.8), inset 0 1px 0 0 #fff, 0 3px 10px #70d1f8, 0 3px 10px #70d1f8;
+}
+.top-bar splitbutton > button {
+	border-radius: 0 0 0 7px;
+}
+.top-bar splitbutton > button:hover {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent 55%), #1668a0;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.8), 1px 0 0 0 rgba(255, 255, 255, 0.8), -1px 0 0 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 0 rgba(255, 255, 255, 0.8), inset 1px 0 0 0 rgba(255, 255, 255, 0.8), inset -1px 0px 0 0 rgba(255, 255, 255, 0.8), inset 0 1px 0 0 #fff, 0 3px 10px #70d1f8, 0 3px 10px #70d1f8;
+}
+.top-bar splitbutton menubutton button {
+	border-radius: 0 0 7px 0;
+}
+.top-bar splitbutton menubutton button:hover {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #1668a0;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.8), 1px 0 0 0 rgba(255, 255, 255, 0.8), -1px 0 0 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 0 rgba(255, 255, 255, 0.8), inset 1px 0 0 0 rgba(255, 255, 255, 0.8), inset -1px 0px 0 0 rgba(255, 255, 255, 0.8), inset 0 1px 0 0 #fff, 0 3px 10px #70d1f8, 0 3px 10px #70d1f8;
+}
+.top-bar box > widget > box > button.image-button {
+    margin-top: -20px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent), rgba(0, 0, 0, 0.1);
+}
+.top-bar box > widget > box > button.image-button:hover {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #1668a0;
+}
+.top-bar box > widget > box > button.image-button:active,
+.top-bar box > widget > box > button.image-button:checked {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 75%, transparent 75%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #042140;
+}
+.top-bar splitbutton > button:active,
+.top-bar splitbutton > button:checked, 
+.top-bar splitbutton menubutton button:active,
+.top-bar splitbutton menubutton button:checked,
+.top-bar button.image-button:active,
+.top-bar button.image-button:checked {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #042140;
+}
+.top-bar box > widget > box > button.image-button > image {
+    transform: translateY(14px);
+}
+.top-bar stack > widget > box > button.image-button > image {
+    transform: translateY(-1px);
+}
+
+.top-bar splitbutton button, .top-bar button.image-button {
+    min-height: 4px;
+}
+.top-bar splitbutton button image, .top-bar button.image-button image {
+    color: #eeeeee;
+    filter: drop-shadow(0.5px 0 0 var(--icon-border-color)) /* Right shadow */
+    drop-shadow(-0.5px 0 0 var(--icon-border-color)) /* Left shadow */
+    drop-shadow(0 0.5px 0 var(--icon-border-color)) /* Bottom shadow */
+    drop-shadow(0 -0.5px 0  var(--icon-border-color));
+}
+.top-bar splitbutton separator {
+    min-height: 0;
+    min-width: 0;
+    background: transparent;
+    opacity: 0;
+    border-left: 0;
+    box-shadow: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    min-width: 0;
+}
+.top-bar splitbutton menubutton {
+    transform: translateY(0);
+    margin-left: -8px;
+    min-height: 4px;
+}
+.top-bar splitbutton menubutton button {
+    min-height: 4px;
+}
+.top-bar splitbutton button arrow {
+    color: #eeeeee;
+    filter: drop-shadow(0.5px 0 0 var(--icon-border-color)) /* Right shadow */
+    drop-shadow(-0.5px 0 0 var(--icon-border-color)) /* Left shadow */
+    drop-shadow(0 -0.5px 0 var(--icon-border-color)) /* Bottom shadow */
+    drop-shadow(0 0.5px 0 var(--icon-border-color));
+    transform: translateY(0);
+}
+.top-bar {
+    background: transparent;
+    margin-top: -14px;
+}
+
+.top-bar label.title {
+    padding-top: 12px;
+}
+
+.sidebar-pane, .content-pane {
+    background: linear-gradient(to bottom, transparent 0, transparent 32px, #eee 19px);
+}
+
+windowcontrols > .icon {
+    transform: translateY(6px);
+    margin-left: -3px;
+}
+
+.popup {
+    transform: translateY(-4px);
+}
+arrow {
+    transform: translateY(4px);
+}
+.popup button.image-button {
+    margin-top: 7px;
+}
+
+
+windowtitle > box > .title {
+    font-weight: 500;
+    color: #000;
+    text-shadow: 0 0 10px #fff, 0 0 8px #fff, 0 0 8px #fff;
+}
+
+headerbar.titlebar,
+leaflet > box > headerbar:not(.titlebar) {
+    min-height: 43px;
+    box-shadow: none;
+}
+.titlebar,
+leaflet > box > headerbar:not(.titlebar) {
+    background: transparent;
+}
+
+.titlebar windowcontrols > image,
+leaflet > box > headerbar:not(.titlebar) windowcontrols > image,
+leaflet > box > headerbar:not(.titlebar) windowtitle {
+    transform: translateY(13px);
+}
+
+.titlebar box > button.image-button,
+leaflet > box > headerbar:not(.titlebar) box > button.image-button {
+    min-height: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.95);
+    border-top: 0;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.8), 1px 0 0 0 rgba(255, 255, 255, 0.8), -1px 0 0 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 0 rgba(255, 255, 255, 0.8), inset 1px 0 0 0 rgba(255, 255, 255, 0.8), inset -1px 0px 0 0 rgba(255, 255, 255, 0.8), inset 0 1px 0 0 #fff;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0, rgba(255, 255, 255, 0.4) 50%, transparent 50%, transparent);
+    transform: scale(0.7) translateY(-4px);
+}
+.titlebar box > button.image-button > image,
+leaflet > box > headerbar:not(.titlebar) box > button.image-button > image {
+    transform: translateY(4px);
+}
+.titlebar box > button.image-button:hover,
+leaflet > box > headerbar:not(.titlebar) box > button.image-button:hover {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #1668a0;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.8), 1px 0 0 0 rgba(255, 255, 255, 0.8), -1px 0 0 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 0 rgba(255, 255, 255, 0.8), inset 1px 0 0 0 rgba(255, 255, 255, 0.8), inset -1px 0px 0 0 rgba(255, 255, 255, 0.8), inset 0 1px 0 0 #fff, 0 3px 10px #70d1f8, 0 3px 10px #70d1f8;
+}
+.titlebar box > button.image-button:active,
+leaflet > box > headerbar:not(.titlebar) box > button.image-button:active,
+.titlebar box > button.image-button:checked,
+leaflet > box > headerbar:not(.titlebar) box > button.image-button:checked {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #042140;
+}
+
+.titlebar windowhandle,
+leaflet > box > headerbar:not(.titlebar) windowhandle {
+    transform: translateY(-14px);
+}
+.titlebar windowhandle > box,
+leaflet > box > headerbar:not(.titlebar) windowhandle > box {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.titlebar menubutton > button.image-button,
+leaflet > box > headerbar:not(.titlebar) menubutton > button.image-button {
+    min-height: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.95);
+    border-top: 0;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.8), 1px 0 0 0 rgba(255, 255, 255, 0.8), -1px 0 0 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 0 rgba(255, 255, 255, 0.8), inset 1px 0 0 0 rgba(255, 255, 255, 0.8), inset -1px 0px 0 0 rgba(255, 255, 255, 0.8), inset 0 1px 0 0 #fff;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0, rgba(255, 255, 255, 0.4) 50%, transparent 50%, transparent);
+    transform: scale(0.7);
+}
+.titlebar menubutton > button.image-button:hover,
+leaflet > box > headerbar:not(.titlebar) menubutton > button.image-button:hover {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #1668a0;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.8), 1px 0 0 0 rgba(255, 255, 255, 0.8), -1px 0 0 0 rgba(255, 255, 255, 0.8), inset 0 -1px 0 0 rgba(255, 255, 255, 0.8), inset 1px 0 0 0 rgba(255, 255, 255, 0.8), inset -1px 0px 0 0 rgba(255, 255, 255, 0.8), inset 0 1px 0 0 #fff, 0 3px 10px #70d1f8, 0 3px 10px #70d1f8;
+}
+.titlebar menubutton > button.image-button:active,
+leaflet > box > headerbar:not(.titlebar) menubutton > button.image-button:active,
+.titlebar menubutton > button.image-button:checked,
+leaflet > box > headerbar:not(.titlebar) menubutton > button.image-button:checked {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #042140;
+}
+.titlebar button.image-button image,
+leaflet > box > headerbar:not(.titlebar) button.image-button image {
+    color: #eeeeee;
+    filter: drop-shadow(0.5px 0 0 var(--icon-border-color))
+            drop-shadow(-0.5px 0 0 var(--icon-border-color))
+            drop-shadow(0 0.5px 0 var(--icon-border-color))
+            drop-shadow(0 -0.5px 0  var(--icon-border-color));
+}
+
+/* TITLEBAR TABS */
+
+.titlebar viewswitchertitle {
+    transform: translateY(13px);
+}
+
+.titlebar viewswitcher box {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.titlebar viewswitcher > button {
+    min-height: 14px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0, rgba(255, 255, 255, 0.4) 50%, transparent 50%, transparent);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+    margin-right: 4px;
+}
+.titlebar viewswitcher > button:hover {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #1668a0;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.4), 0 3px 10px #70d1f8, 0 3px 10px #70d1f8;
+    color: #fff;
+}
+.titlebar viewswitcher > button:checked {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #1668a0;
+    color: #fff;
+}
+.titlebar viewswitcher > button:active {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #042140;
+}
+.titlebar viewswitcher > button:hover label,
+.titlebar viewswitcher > button:checked label {
+    text-shadow: 
+    0.5px 0.5px 0px var(--icon-border-color), 
+    -0.5px 0.5px 0px var(--icon-border-color), 
+    0.5px -0.5px 0px var(--icon-border-color),  
+    -0.5px -0.5px 0px var(--icon-border-color);
+}
+.titlebar viewswitcher image {
+    color: #fff;
+    filter: drop-shadow(0.5px 0 0 var(--icon-border-color)) /* Right shadow */
+            drop-shadow(-0.5px 0 0 var(--icon-border-color)) /* Left shadow */
+            drop-shadow(0 0.5px 0 var(--icon-border-color)) /* Bottom shadow */
+            drop-shadow(0 -0.5px 0  var(--icon-border-color));
+}
+
+.top-bar viewswitcher > button {
+    min-height: 14px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0, rgba(255, 255, 255, 0.4) 50%, transparent 50%, transparent);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+    margin-right: 4px;
+	
+}
+.top-bar viewswitcher > button:hover {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #1668a0;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.4), 0 3px 10px #70d1f8, 0 3px 10px #70d1f8;
+    color: #fff;
+}
+.top-bar viewswitcher > button:checked {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #1668a0;
+    color: #fff;
+}
+.top-bar viewswitcher > button:active {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0, rgba(255, 255, 255, 0.5) 50%, transparent 50%, transparent), radial-gradient(ellipse 40% 14px at center bottom, #2ed8e4, transparent), #042140;
+}
+.top-bar viewswitcher > button:hover label,
+.top-bar viewswitcher > button:checked label {
+    text-shadow: 
+    0.5px 0.5px 0px var(--icon-border-color), 
+    -0.5px 0.5px 0px var(--icon-border-color), 
+    0.5px -0.5px 0px var(--icon-border-color),  
+    -0.5px -0.5px 0px var(--icon-border-color);
+}
+.top-bar viewswitcher {
+	transform: translateY(2px);
+}
+.top-bar viewswitcher button {
+   margin-top: 9px;
+}
+
+.top-bar viewswitcher box {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.top-bar viewswitcher image {
+    color: #fff;
+    filter: drop-shadow(0.5px 0 0 var(--icon-border-color)) /* Right shadow */
+            drop-shadow(-0.5px 0 0 var(--icon-border-color)) /* Left shadow */
+            drop-shadow(0 0.5px 0 var(--icon-border-color)) /* Bottom shadow */
+            drop-shadow(0 -0.5px 0  var(--icon-border-color));
+}
+
+/* GENERIC INNER BORDERS */
+
+leaflet > box > stack > widget,
+.undershoot-top > stack > widget,
+.undershoot-top > widget,
+box.vertical > box.horizontal > preferencespage,
+window > dialog-host > widget > widget > box > stack > preferencespage {
+    background: #fff;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7), 0 0 0 1px rgba(0, 0, 0, 0.6);
+    margin: 2px;
+    border-radius: 1px;
+}
+
+/* TWO/THREE PANED INNER BORDERS */
+
+overlay-split-view > .sidebar-pane .navigation-sidebar,
+window > dialog-host > widget > widget > stack > navigation-split-view > .sidebar-pane .navigation-sidebar,
+window > dialog-host > widget > widget > navigation-split-view > .sidebar-pane .navigation-sidebar {
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7), 0 0 0 1px rgba(0, 0, 0, 0.6);
+	margin-top: 2px;
+	margin-left: 2px;
+	border-top-left-radius: 1px;
+	background: #eee;
+}
+overlay-split-view > .sidebar-pane,
+window > dialog-host > widget > widget > stack > navigation-split-view > .sidebar-pane,
+window > dialog-host > widget > widget > navigation-split-view > .sidebar-pane {
+	margin-bottom: 2px;
+	box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.7), 0 1px 0 0 rgba(0, 0, 0, 0.6);
+	border-bottom-left-radius: 3px;
+}
+
+.undershoot-top toastoverlay, navigation-view-page > toastoverlay > stack > .undershoot-top > stack scrolledwindow {
+	background: #fff;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7), 0 0 0 1px rgba(0, 0, 0, 0.6);
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	border-top-right-radius: 1px;
+	border-bottom-right-radius: 1px;
+	padding-top: 10px;
+}
+.sidebar-pane navigation-view > navigation-view-page > .undershoot-top scrolledwindow {
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7), 0 0 0 1px rgba(0, 0, 0, 0.6);
+	margin-top: 2px;
+	background: rgb(250, 250, 250);
+}
+
+.sidebar-pane .navigation-sidebar {
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7), 0 0 0 1px rgba(0, 0, 0, 0.6);
+	margin-top: 2px;
+	background: rgb(250, 250, 250);
+}
+
+.content-pane .sidebar-pane {
+	margin-bottom: 2px;
+	box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.7), 0 1px 0 0 rgba(0, 0, 0, 0.6);
+}
+
+.content-pane overlay > scrolledwindow,
+.content-pane > navigation-view-page scrolledwindow {
+	background: #fff;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7), 0 0 0 1px rgba(0, 0, 0, 0.6);
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	border-top-right-radius: 1px;
+	border-bottom-right-radius: 1px;
+}
+
+.sidebar-pane, .content-pane {
+	background: transparent;
+}
+
+label.title {
+	font-weight: 600;
+}
+
+/* NAUTILUS PATH BAR */
+
+#NautilusPathBar {
+	transform: translateY(7px);
+	border-radius: 2px;
+	background: rgba(255, 255, 255, 0.3);
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+}
+#NautilusPathButton {
+	margin: 0px;
+	min-height: 20px;
+	min-width: 0px;
+}
+#NautilusPathButton > box > image {
+	-gtk-icon-size: 12px;
+}
+#NautilusPathBar > menubutton.flat.popup {
+	min-height: 20px;
+	transform: translateY(0px);
+}
+#NautilusPathBar > menubutton.flat.popup > button.toggle > box > contents > image {
+	-gtk-icon-size: 10px;
+	color: rgba(0, 0, 0, 0.6);
+}
+#NautilusPathBar button.toggle {
+	padding: 0;
+	min-height: 0px;
+	min-width: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+@import 'colors.css';
